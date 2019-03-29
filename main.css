@@ -1,0 +1,43 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1548206328-a50e7afafc6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)
+}
+
+h1 {
+    text-align: center;
+    border-radius: 5px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 3px;
+    border-style: inset;
+    background-color: #69efcb;
+}
+
+.lilJon {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBox {
+    text-align: center;
+    border-radius: 5px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 3px;
+    border-style: inset;
+    background-color: #69efcb;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: aqua;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-radius: 5px;
+}
