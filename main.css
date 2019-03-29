@@ -41,3 +41,13 @@ input {
     border-style: inset;
     border-radius: 5px;
 }
+
+.searcher {
+    background-color: aqua;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-radius: 5px;
+    
+}
+
