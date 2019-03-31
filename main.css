@@ -50,4 +50,6 @@ input {
     border-radius: 5px;
     
 }
-
+.searcher:hover {
+    background: yellow;
+}
