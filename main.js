@@ -7,29 +7,25 @@ window.addEventListener('DOMContentLoaded', (event) => {
     myClick();
 });
 
-// let jackJohnson = fetch("https://itunes-api-proxy.glitch.me/artist/jack-johnson/909253?uo=4")
-// console.log('got the link')
-
 // Event Listener on the Button and it's logic
 function myClick(buttonSearch){
 document.getElementById("buttonSearch").addEventListener("click",function(event){
     // alert("button clicked"); - great test - take out once works
     event.stopPropagation();
     });
+    //first get dang file
+    fetch("https://itunes-api-proxy.glitch.me/search?term=jack+johnson&limit=25")
+  .then(function(response) {
+    return response.json();
+  })
+  //how to parse data from json file
+  .then(function(myJson) {
+    console.log(JSON.stringify(myJson));
+  });
 }
 
-// get text from input field to construct url - check chins hint
-
-//first get dang file
-//how to parse data from json file
 
 
-function dataParse(notSureWhatThisShouldBe){
-    return fetch("https://itunes-api-proxy.glitch.me/artist/jack-johnson/909253?uo=4")
-    .then(function(response) {
-        if (!response.ok) {
-            throw Error(response.statusText)
-        }
-        return response.json();
-    })
-}
+
+
+
